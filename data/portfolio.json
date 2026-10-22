@@ -1,0 +1,25 @@
+{
+  "updated": "2026-10-22",
+  "readings": [
+    {"year":"2024","label":"反向導通與閘極失效","title":"Toward Understanding the Failure Mechanism in p-GaN Gate HEMTs Operating in Reverse Conduction Diode Mode","access":"公開 accepted manuscript","question":"第三象限下的 gate leakage 與失效位置，如何由電性、TCAD 與 EMMI 交叉判斷？","method":"公開作者稿結合反向偏壓量測、場分布模擬與發光位置觀察。閱讀重點是端點定義、compliance、掃描條件與證據鏈。","deliverable":"整理一張應力→曲線→模擬→位置證據圖，列出熱與接觸效應等替代解釋。","doi":"https://doi.org/10.1109/TED.2024.3412095","source":"https://biblio.ugent.be/publication/01JD55KQR23BND1QH5FWMHB85X"},
+    {"year":"2022","label":"p-GaN 閘極時間相依崩潰","title":"High Threshold Voltage Enhancement-Mode Regrown p-GaN Gate HEMTs With a Robust Forward Time-Dependent Gate Breakdown Stability","access":"官方機構摘要","question":"高 VTH 與 forward TDGB 穩定度如何一起評估？","method":"摘要比較不同 AlGaN barrier 的 regrown p-GaN 元件。完整 stress protocol、樣本數與外推模型尚需全文確認。","deliverable":"先區分 VTH、gate breakdown、失效分布與壽命外推所需的證據，不從摘要重建未公開條件。","doi":"https://doi.org/10.1109/LED.2022.3198876","source":"https://biblio.ugent.be/publication/01GP3NCJFGMP9VW411PDCFC0HH"},
+    {"year":"2026","label":"連續切換下的 SBD 劣化","title":"Analysis of Trap-Induced Dynamic Degradation in AlGaN/GaN Gated-Edge Termination Schottky Barrier Diodes Under Continuous Switching Operation","access":"正式書目，全文待取得","question":"連續切換時，應如何定義 stress 與 dynamic parameter 的讀取窗口？","method":"目前僅以 WLab 出版清單確認題名與 DOI；方法、條件和數值結果未核實，不引用未讀全文的細節。","deliverable":"取得合法全文後，補上切換電路、時間窗、量測條件與失效判準。","doi":"https://doi.org/10.1109/TED.2026.3714751","source":"https://tianliwu.wixsite.com/nycuwlab/publications"},
+    {"year":"2024","label":"U-Net 與 TCAD 電勢圖","title":"Using U-Net Convolutional Neural Network to Model Pixel-Based Electrostatic Potential Distributions in GaN Power MIS-HEMTs","access":"出版社開放全文","question":"用 surrogate model 加速模擬時，如何驗證未見結構與偏壓的泛化？","method":"將 TCAD 元件與偏壓資訊編碼後，用 U-Net 預測二維電勢。閱讀重點是輸入表示、訓練／驗證分割與誤差定義。","deliverable":"畫出 input encoding→model→potential map 流程，列出分割方式與分布外預測的限制，不宣稱取得原始 dataset 或重現。","doi":"https://doi.org/10.1038/s41598-024-58112-9","source":"https://www.nature.com/articles/s41598-024-58112-9"},
+    {"year":"2025","label":"IGZO TFT 與 GaN 三維整合","title":"Demonstration of TFTs 3D Monolithically Integrated on GaN HEMTs Using Cascode Configuration With High Breakdown Voltage (>1900 V)","access":"出版社開放全文","question":"製程、通道厚度與 cascode 電壓分配如何反映在曲線上？","method":"由公開製程流程與電性圖，對照 TFT、GaN HEMT 及 cascode 的參數定義；區分元件特性與整合後的結果。","deliverable":"重畫簡化製程圖，逐步連結電性與可能的介面／漏電問題。","doi":"https://doi.org/10.1038/s41598-025-23825-y","source":"https://www.nature.com/articles/s41598-025-23825-y"},
+    {"year":"2024","label":"dynamic RON 與 VTH 的量測","title":"Dynamic On-Resistance and Threshold Voltage Instability Evaluation Circuit for Power GaN HEMTs Devices","access":"校方出版摘要","question":"如何在相同 switching condition 下比較 RON 與 VTH instability？","method":"官方摘要介紹同一硬切換條件下評估兩者的電路。完整 topology、timing 與誤差須取得全文後核對。","deliverable":"整理 baseline→stress→delay→readout→recovery 時間線，標出每項參數的抽取時點。","doi":"https://doi.org/10.1109/TIE.2023.3332998","source":"https://scholar.nycu.edu.tw/zh/publications/dynamic-on-resistance-and-threshold-voltage-instability-evaluatio/"}
+  ],
+  "projects": [
+    {"name":"離岸風電互動資料儀表板","description":"以 HTML、JavaScript 與 Leaflet 將內嵌風場資料呈現為地圖、國家／狀態篩選、KPI 與明細表。","context":"靜態資料視覺化原型；保留線上成品與原始碼。資料沒有即時更新，不作目前產業統計。","tags":["HTML / JavaScript","Leaflet","2025.12"],"url":"https://mars727-hub.github.io/wind-dashboard-demo/","source":"https://github.com/mars727-hub/wind-dashboard-demo","kind":"查看互動成品"},
+    {"name":"OpenCV 物件計數練習","description":"以 HSV 閾值、Canny 邊緣、erosion 與輪廓面積過濾，練習番茄／圓形物件計數及中心點標記。","context":"OpenCV 初階課程專案；原始碼與結果圖可查。尚非深度學習模型或經跨場景驗證的檢測系統。","tags":["Python / OpenCV","影像前處理","2025.12"],"url":"https://github.com/mars727-hub/Tomato-Detector","source":"https://github.com/mars727-hub/Tomato-Detector/blob/main/main.py.txt","kind":"查看專案與結果圖"}
+  ],
+  "milestones": [
+    {"date":"10/23–28","year":"2026","phase":"foundation","title":"完成第一份閱讀與重跑紀錄","description":"讀公開計畫及反向導通文章可取得部分；親自重跑分析器並改一個電流閾值，寫出自己的解釋與疑問。"},
+    {"date":"11/01","year":"2026","phase":"foundation","title":"六篇文獻矩陣第一輪","description":"各篇標出全文／摘要／書目與一個個人問題，至少兩篇完成問題、方法、觀察與未知的摘要。"},
+    {"date":"11/05","year":"2026","phase":"reliability","title":"依通知參加奈米中心工安課程","description":"目前已報名。出席或通過後保存證明，再依中心與實驗室規定接受進一步訓練。"},
+    {"date":"11/18","year":"2026","phase":"reliability","title":"可靠度與統計的基礎驗收","description":"區分 BTI、TDDB、TDGB；用完整失效合成資料理解 Weibull β／η 與設限資料，不作元件壽命外推。"},
+    {"date":"11/25","year":"2026","phase":"extension","title":"U-Net 方法與泛化問題","description":"重畫 TCAD input encoding、U-Net 與電勢圖的流程，討論資料分割與未見結構的驗證。"},
+    {"date":"12/02","year":"2026","phase":"extension","title":"製程流程與電性讀圖","description":"以 IGZO/GaN 整合文獻重畫製程，區分單元件與 cascode 的參數及 breakdown 定義。"},
+    {"date":"12/09–30","year":"2026","phase":"reliability","title":"資料品質、量測時序與進度報告","description":"檢查單位、缺欄位、t=0 baseline 與非單調曲線；畫 stress/readout/recovery 時序，整理一頁月度進度。"},
+    {"date":"01/06–02/07","year":"2027","phase":"extension","title":"基礎整合與下一階段","description":"複習能帶、接面、MOS 與 2DEG。依合法授權與指導安排 TCAD；QML 先列選讀，2/07回顧可出示的成果並調整計畫。"}
+  ]
+}

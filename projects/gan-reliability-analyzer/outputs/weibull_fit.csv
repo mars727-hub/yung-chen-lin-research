@@ -1,0 +1,2 @@
+n_complete,n_censored_rejected,beta_shape,eta_scale_s,note
+10,0,1.6472670487671341,580.411353168955,full-failure two-parameter MLE; no censored rows accepted

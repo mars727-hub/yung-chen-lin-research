@@ -1,0 +1,3 @@
+# Optional plotting/statistics alternatives.  The default project does not need them.
+matplotlib>=3.7
+scipy>=1.10

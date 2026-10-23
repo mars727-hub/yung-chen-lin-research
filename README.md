@@ -1,23 +1,29 @@
 # 林勇辰的研究學習履歷
 
-面向大學部專題申請的靜態網站，包含真實工程背景、公開非筆記專案、研究選讀、合成曲線互動分析與學習計畫。
+面向陽明交大電子所固態電子領域教授的一頁式研究履歷與學習計畫，包含個人背景、自傳、申請動機、三階段規劃與公開實作專案。
 
 網站：https://mars727-hub.github.io/yung-chen-lin-research/
 
 ## 本機預覽
 
-無建置工具或前端依賴。在此目錄執行 `python -m http.server 4173 --bind 127.0.0.1`，開啟 http://127.0.0.1:4173/ 。需要HTTP以載入JSON與CSV；不要直接用file://。
+無需建置。首頁是單一 `index.html`，自訂 CSS 與 JS 均內嵌，以 CDN 載入 Tailwind CSS、Font Awesome 與 Inter／Noto Sans TC 字型。可直接開啟 HTML；正式預覽可執行 `python -m http.server 4174 --bind 127.0.0.1`，開啟 http://127.0.0.1:4174/ 。字型、圖標與 Tailwind 需網路，自訂 CSS 保留主要版型。
 
 ## 更新內容
 
-- `index.html`：履歷與研究敘事。
-- `data/portfolio.json`：六篇選讀、公開專案、規劃檢核。`updated`為實際人工更新日期，不自動生成學習進度。
+- `index.html`：完整首頁原始碼；六區塊與導覽、桌面 sticky 個人欄、手機單欄、平滑錨點及目前章節提示。
+- `downloads/resume.pdf`：可直接下載的一頁研究履歷；首頁按鈕使用相對路徑，本機與正式網站均可使用。
+- `downloads/resume.html`：保留的可列印文字版履歷。
 - `research/study-plan.md`：完整公開學習安排。
-- `downloads/resume.html`：可列印履歷，未包含私人電話。
 - `projects/gan-reliability-analyzer/`：AI協助的Python教學原型、合成CSV與測試。
-- `assets/app.js`：互動頁的定電流VTH、低場RON與baseline比較；設定改變後即重新計算，可下載帶條件欄位的結果。
+- `data/portfolio.json`、`assets/app.js`、`assets/style.css`：前版網站資料與互動來源，保留供參考；新版首頁不依賴這些檔案。
 
-將個人工作列為完成前，須有實際閱讀或操作紀錄與可出示證據。GitHub Pages不會執行Python；瀏覽器僅用內建合成CSV計算。這個網站不傳送訪客輸入，無追蹤、登入或後端資料庫。
+將個人工作列為完成前，須有實際閱讀或操作紀錄與可出示證據。GitHub Pages 不會執行 Python。這個網站無訪客輸入表單、追蹤、登入或後端資料庫。
+
+## 客製化
+
+在 `index.html` 搜尋 `TODO:` 可找到照片、教授／實驗室研究關鍵字、課程對齊與尚未公開的語音轉錄專案連結位置。照片目前以本人姓名縮寫 ML 佔位；補入本人照片後保留可讀的 alt。頁面日期應由本人實際更新，勿自動生成學習進度。
+
+投入安排為「現在即可集中投入、本學期希望加入、持續至預計 2028/06 畢業」。兩年制學程畢業學分安排較精簡，每週至少 10 小時為固定投入基礎，依任務增加時間；2027 暑期為持續研究期。2027 電子所推甄是個人目標，非已公告或已錄取結果。
 
 ## 內容範圍
 
@@ -27,4 +33,4 @@
 
 ## 發布
 
-GitHub Pages以main分支根目錄發布，`.nojekyll`保持純靜態。每次更新後應檢查桌面與手機版、互動輸出與下載連結。測試與發布驗證的本機工作檔存於未發布的`_authoring/`。
+GitHub Pages 以 main 分支根目錄發布，`.nojekyll` 保持純靜態。每次更新後應檢查桌面、平板、手機、六個章節錨點與 PDF 下載。測試、PDF 產生器及發布驗證的本機工作檔存於未發布的 `_authoring/`。

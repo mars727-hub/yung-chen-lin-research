@@ -1,0 +1,139 @@
+/* Hallmark · shape: Letter · genre: editorial · theme: Specimen · redesign: full · copy: verbatim · v2.0.0 */
+/* 內文採編輯式分隔線與開放版面，保留既有章節與互動。 */
+a:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+a:active { opacity: .75; }
+.section-heading{align-items:baseline;gap:var(--space-md);margin-bottom:28px;padding-top:var(--space-md);border-top:1px solid var(--ink)}
+.section-heading .section-number{display:block;width:auto;height:auto;border:0;border-radius:0;background:transparent;color:var(--accent);font-size:15px;font-weight:600}
+.section-heading h2{font-family:var(--font-display);font-size:var(--text-section);line-height:1.35;letter-spacing:0;overflow-wrap:break-word;min-width:0;text-wrap:balance}
+.section-heading .en{font-family:var(--font-body);font-size:14px;letter-spacing:0;text-transform:none;color:var(--muted);margin-top:var(--space-xs)}
+.section-heading .section-rule{background:var(--rule)}
+.section-lead{font-size:18px;line-height:1.9;max-width:72ch;color:var(--body)}
+.content-card{background:transparent!important;border:0!important;border-radius:0;box-shadow:none!important;padding:0}
+.prose{color:var(--body)}
+.prose p{font-size:18px;line-height:2;max-width:75ch;margin-bottom:1.2em}
+.prose h3{font-family:var(--font-display);font-size:22px;line-height:1.5;color:var(--ink);margin:1.9em 0 .55em;overflow-wrap:break-word;min-width:0}
+.prose strong{color:var(--ink)}
+.prose a,.industry-observations a,.focus-line a,.preparation-note a{color:var(--accent);text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:4px}
+.industry-observations{margin:32px 0;padding:var(--space-lg) 0;border:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);border-radius:0;background:transparent}
+.industry-observations h3{margin:0 0 var(--space-xs);font-size:21px}
+.industry-observations .source-date,.industry-observations .future-note{font-size:15px;line-height:1.8;color:var(--muted)}
+.industry-observations ul{padding-left:1.3em;gap:var(--space-sm)}
+.industry-observations li{font-size:17px;line-height:1.9}
+.learning-now{margin:28px 0;padding:var(--space-xs) 0 var(--space-xs) 20px;border-left:3px solid var(--accent);background:transparent;border-radius:0}
+.learning-now h3{margin:0 0 var(--space-xs);font-size:21px}
+.learning-now p{margin:0 0 var(--space-xs)}
+.quote-line{border-left:3px solid var(--accent);font-size:20px;line-height:1.8;color:var(--ink)}
+.career-line{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-lg);margin-top:32px;padding-top:var(--space-lg);border-top:1px solid var(--rule)}
+.career-line .date{font-size:15px;letter-spacing:0;color:var(--accent)}
+.career-line h3{margin:var(--space-xs) 0;font-size:18px}
+.career-line p{font-size:16px;line-height:1.8;color:var(--muted)}
+.motivation-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-lg)}
+.motivation-card{display:block;padding:20px 0 0;background:transparent;border:0;border-top:1px solid var(--rule);border-radius:0;box-shadow:none}
+.motivation-card>i{color:var(--accent);font-size:20px;margin:0 0 var(--space-md)}
+.motivation-card h3{font-family:var(--font-display);font-size:20px;line-height:1.5}
+.motivation-card p,.focus-line p{font-size:17px;line-height:1.9;color:var(--body)}
+.focus-line{margin-top:28px;padding:20px 0;border:0;border-top:1px solid var(--rule);border-radius:0;background:transparent}
+.focus-line>i{color:var(--accent)}
+.roadmap{padding-left:0}
+.roadmap:before{content:none}
+.stage{margin:0;padding:28px 0;border:0;border-top:1px solid var(--rule);border-radius:0;background:transparent;box-shadow:none}
+.stage-index{position:static;display:inline-block;width:auto;height:auto;margin-bottom:var(--space-xs);border:0;border-radius:0;background:transparent;color:var(--accent);font-size:15px;transform:none}
+.stage-head{align-items:baseline;gap:var(--space-xs) 20px;margin-bottom:var(--space-sm)}
+.stage-period{font-size:16px;color:var(--accent);letter-spacing:0}
+.stage-state{font-size:15px;color:var(--muted);padding:0;border-radius:0;background:transparent}
+.stage h3{font-family:var(--font-display);font-size:22px;line-height:1.5}
+.stage-list{gap:var(--space-xs);padding-left:1.2em;list-style:disc}
+.stage-list li{padding-left:0;font-size:17px;line-height:1.9;color:var(--body)}
+.stage-list li:before{content:none}
+.deliverable{border-color:var(--rule);font-size:16px;line-height:1.8;color:var(--muted)}
+.deliverable i{color:var(--accent)}
+.course-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--space-lg);margin-top:var(--space-md)}
+.course-module{padding:var(--space-md) 0;border:0;border-top:1px solid var(--rule);border-radius:0;background:transparent}
+.course-module h4{font-size:17px;color:var(--ink)}
+.course-module h4 span{color:var(--muted)}
+.course-tags,.skill-detail{gap:var(--space-xs) var(--space-md)}
+.course-tags span,.skill-detail span{padding:0;border:0;border-radius:0;background:transparent;font-size:16px;line-height:1.8;color:var(--body)}
+.course-note{font-size:16px;color:var(--muted)}
+.weekly-output{margin-left:0}
+.skills-matrix{padding:0;margin-bottom:28px;background:transparent!important;border:0!important;border-radius:0;box-shadow:none!important}
+.skill-row{grid-template-columns:170px minmax(0,1fr);gap:var(--space-lg);padding:20px 0;border-bottom:1px solid var(--rule)}
+.skill-row:first-child{border-top:1px solid var(--rule)}
+.skill-row h3{font-size:18px;line-height:1.7}
+.skill-description{font-size:16px;line-height:1.8;color:var(--muted)}
+.projects-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-lg)}
+.project-card{display:flex;min-width:0;border:0;border-top:1px solid var(--rule);border-radius:0;background:transparent;box-shadow:none}
+.project-visual{height:115px;background:var(--paper-2);border:0;border-bottom:1px solid var(--rule)}
+.project-visual svg{width:100%;height:100%}
+.visual-label{background:var(--paper);color:var(--muted);font-size:16px}
+.project-body{padding:var(--space-md) 0 var(--space-xs)}
+.project-kind{font-size:14px;letter-spacing:0;text-transform:none;color:var(--accent)}
+.project-body h3{font-family:var(--font-display);font-size:20px;line-height:1.5}
+.project-body p{font-size:17px;line-height:1.85;color:var(--body)}
+.project-tech{font-size:15px;color:var(--muted)}
+.project-links{font-size:16px;color:var(--accent)}
+.project-links a:hover{color:var(--ink)}
+.preparation-note{font-size:16px;line-height:1.9;color:var(--muted)}
+.contact-card{padding:32px 0;border-top:1px solid var(--ink);border-radius:0;background:transparent;color:var(--body);overflow:visible}
+.contact-card:after{content:none}
+.contact-card>.eyebrow{font-size:15px;letter-spacing:0;text-transform:none;color:var(--accent)}
+.contact-card h2{font-family:var(--font-display);font-size:clamp(28px,2.6vw,38px);line-height:1.45;color:var(--ink);overflow-wrap:break-word;min-width:0}
+.contact-card>p{font-size:18px;line-height:1.9;max-width:70ch}
+.contact-actions .primary{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.contact-actions .primary:hover{background:var(--ink);border-color:var(--ink)}
+.contact-actions .outline{background:transparent;color:var(--ink);border-color:var(--ink)}
+.contact-actions .outline:hover{background:var(--paper-2);border-color:var(--accent)}
+.contact-email{font-size:16px!important;color:var(--muted)}
+.contact-email a{color:var(--accent)}
+.footer{margin-top:0;padding:20px 0 32px;border-top:1px solid var(--rule);color:var(--muted);font-size:15px;line-height:1.6}
+.footer a:hover{color:var(--accent)}
+@media(max-width:1023px){
+ .motivation-grid,.projects-grid{grid-template-columns:1fr;gap:0}
+ .motivation-card{display:block;padding:20px 0}
+ .motivation-card>i{margin:0 0 var(--space-xs)}
+ .project-card{display:grid;grid-template-columns:minmax(120px, .45fr) minmax(0,1fr);gap:20px;padding:var(--space-md) 0}
+ .project-visual{height:145px;min-height:0;border:0}
+ .project-body{padding:0}
+ .career-line{grid-template-columns:1fr;gap:var(--space-md)}
+}
+@media(max-width:600px){
+ .section-heading{gap:var(--space-sm)}
+ .section-heading h2{font-size:27px}
+ .section-heading .en{font-size:14px}
+ .content-card{padding:0}
+ .prose p{font-size:17px;line-height:1.95}
+ .prose h3{font-size:20px}
+ .industry-observations,.learning-now{padding:var(--space-md) 0}
+ .learning-now{padding-left:var(--space-md)}
+ .industry-observations li,.stage-list li,.motivation-card p,.focus-line p{font-size:17px}
+ .career-line>div{display:block}
+ .career-line .date{padding:0}
+ .career-line h3{margin:var(--space-2xs) 0}
+ .course-grid{grid-template-columns:1fr}
+ .skill-row{grid-template-columns:1fr;gap:var(--space-xs)}
+ .project-card{grid-template-columns:1fr;gap:var(--space-md)}
+ .project-visual{height:140px}
+ .contact-card{padding:28px 0}
+ .contact-card>p{font-size:17px}
+}
+
+/* 自足的版面基礎；內容在關閉 JavaScript 時仍可閱讀。 */
+.section-heading{display:flex}
+.section-heading .section-number{flex:none}
+.section-heading .section-rule{height:1px;flex:1;margin-left:var(--space-xs)}
+.career-line,.motivation-grid,.course-grid,.skill-row,.projects-grid{display:grid}
+.career-line>div,.motivation-card,.course-module,.skill-row>div,.project-body{min-width:0}
+.focus-line,.stage-head,.deliverable,.contact-actions,.footer{display:flex}
+.focus-line,.deliverable{align-items:flex-start;gap:var(--space-sm)}
+.stage-head{justify-content:space-between;flex-wrap:wrap}
+.stage-list{display:grid}
+.course-tags,.skill-detail,.project-links{display:flex;flex-wrap:wrap}
+.project-card{flex-direction:column}
+.project-visual{position:relative;display:flex;align-items:center;justify-content:center}
+.visual-label{position:absolute;right:var(--space-xs);top:var(--space-xs);padding:var(--space-3xs) var(--space-2xs)}
+.project-body{display:flex;flex:1;flex-direction:column}
+.project-links{gap:var(--space-sm);margin-top:auto;padding-top:var(--space-md)}
+.contact-actions{flex-wrap:wrap;gap:var(--space-sm);margin-top:var(--space-lg)}
+.footer{justify-content:space-between;flex-wrap:wrap;gap:var(--space-md)}
+@media(max-width:1023px){.project-card{display:grid}}
+@media(max-width:600px){.career-line,.motivation-grid,.course-grid,.skill-row,.projects-grid,.project-card{grid-template-columns:minmax(0,1fr)}}
+

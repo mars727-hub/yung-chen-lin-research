@@ -1,0 +1,107 @@
+/* Hallmark · shape: Letter · genre: editorial · theme: Specimen · redesign: full · copy: verbatim
+ * hero: Banner · nav: edge-aligned index · footer: colophon · imagery: none · signature: the academic journey in the author's own words
+ * axes: light/high-contrast-serif/cool · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P_ H_ E_ S_ R_ V_ · weakest: dense biography, resolved with readable measure and section rhythm */
+/* Hallmark · waive 59 · dense research biography and study plan · original text remains legible without forcing excessive empty space */
+/* Hallmark · waive 77 · existing contact section has one invitation paragraph · its readable measure supports focused academic correspondence */
+@import url('./tokens.css');
+@import url('./base.css');
+@import url('./assets/editorial-sections.css');
+
+:root {
+  --paper: var(--color-paper); --paper-2: var(--color-paper-2); --ink: var(--color-ink);
+  --body: var(--color-ink-2); --muted: oklch(38% 0.014 65); --accent: oklch(36% 0.13 262);
+  --rule: var(--color-rule); --focus: oklch(30% 0.13 262);
+}
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--body); font-size: 18px; line-height: 1.9; }
+a { color: var(--accent); text-underline-offset: 0.24em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+a:active { opacity: .75; }
+strong { color: var(--ink); font-weight: 700; }
+i { width: 1.1em; text-align: center; }
+.skip-link { position: fixed; left: 16px; top: -100px; z-index: 500; padding: var(--space-sm) 20px; background: var(--ink); color: var(--paper); }
+.skip-link:focus { top: 12px; }
+.page-shell { width: min(100% - 96px, 1320px); margin-inline: auto; }
+.profile { padding-block: var(--space-md) var(--space-sm); border-bottom: 1px solid var(--rule); }
+.profile-card { display: grid; grid-template-columns: 190px minmax(0, 1fr) minmax(250px, .9fr); gap: var(--space-2xs) 32px; align-items: start; }
+.profile-top { grid-column: 1; grid-row: 1; display: flex; align-items: center; gap: var(--space-sm); }
+.portrait { width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid var(--ink); color: var(--ink); font-family: var(--font-display); font-size: 20px; }
+.profile-caption { font-size: 12px; line-height: 1.35; color: var(--muted); }
+.profile-caption b { display: block; color: var(--ink); }
+.profile-name { grid-column: 1; grid-row: 2; color: var(--ink); font-family: var(--font-display); font-size: 27px; font-weight: 700; line-height: 1.4; }
+.profile-english { grid-column: 1; grid-row: 3; color: var(--muted); font-size: 16px; }
+.profile-school { grid-column: 2; grid-row: 1 / 4; font-size: 16px; line-height: 1.65; }
+.profile-school strong { display: block; color: var(--ink); }
+.profile-school .small { font-size: 14px; color: var(--muted); }
+.badges { grid-column: 2; grid-row: 4; display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-md); padding-top: var(--space-xs); font-size: 14px; }
+.badge { color: var(--muted); }
+.profile-links { grid-column: 3; grid-row: 1 / 4; display: grid; gap: var(--space-2xs); font-size: 15px; line-height: 1.5; }
+.profile-links a { display: flex; align-items: center; gap: var(--space-xs); }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-xs); min-height: 48px; padding: var(--space-xs) 20px; border: 1px solid var(--ink); font-size: 16px; font-weight: 700; text-decoration: none; }
+.primary { color: var(--paper); background: var(--ink); }
+.primary:hover { background: var(--accent); border-color: var(--accent); }
+.outline { color: var(--ink); background: transparent; }
+.outline:hover { color: var(--accent); border-color: var(--accent); }
+.profile .button { grid-column: 3; grid-row: 4; justify-self: start; }
+.profile-note { margin-top: var(--space-sm); color: var(--muted); font-size: 14px; line-height: 1.6; }
+.profile-note br { display: none; }
+.profile-note strong { margin-right: var(--space-sm); }
+.anchor-nav { position: sticky; top: 0; z-index: 30; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.nav-mark { display: none; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 0 28px; }
+.nav-links a { display: inline-block; padding: var(--space-sm) 0; color: var(--body); font-size: 15px; text-decoration: none; border-bottom: 2px solid transparent; }
+.nav-links a:hover, .nav-links a[aria-current='location'] { color: var(--accent); border-bottom-color: var(--accent); }
+.section { padding-block: 80px; border-bottom: 1px solid var(--rule); scroll-margin-top: 76px; }
+#highlights { padding-block: var(--space-xl) var(--space-lg); border-bottom: 0; }
+.highlights-continuation { padding-bottom: 80px; border-bottom: 1px solid var(--rule); }
+.hero-label, .eyebrow { color: var(--muted); font-size: 14px; font-weight: 400; line-height: 1.6; }
+.hero-label { margin-bottom: var(--space-2xs); }
+.status-dot { display: none; }
+h1, h2, h3 { color: var(--ink); overflow-wrap: break-word; min-width: 0; }
+h1 { max-width: none; margin-block: var(--space-md); font-family: var(--font-display); font-size: clamp(38px, 5vw, 66px); font-weight: 700; letter-spacing: -.04em; line-height: 1.32; }
+.accent { color: inherit; }
+.hero-intro { max-width: 74ch; font-size: 18px; line-height: 2.05; }
+#highlights .eyebrow { margin-top: var(--space-md); }
+#highlights .button { margin-top: var(--space-md); }
+.hero-meta { display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-lg); margin-top: var(--space-lg); color: var(--muted); font-size: 15px; }
+.hero-meta span { display: inline-flex; gap: var(--space-xs); align-items: center; }
+.bento-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-lg); margin-top: 52px; }
+.bento { padding-top: 20px; border-top: 2px solid var(--ink); }
+.bento-top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-xs); }
+.bento-number { color: var(--ink); font-family: var(--font-display); font-size: clamp(26px, 3vw, 38px); font-weight: 700; line-height: 1.3; font-variant-numeric: tabular-nums; }
+.bento-number small { margin-left: var(--space-2xs); color: var(--muted); font-family: var(--font-body); font-size: 14px; }
+.icon-tile { display: none; }
+.bento h3 { margin-block: var(--space-md) var(--space-xs); font-family: var(--font-body); font-size: 18px; font-weight: 700; line-height: 1.5; }
+.bento p:not(.bento-number) { font-size: 16px; line-height: 1.85; }
+.callout { display: flex; gap: var(--space-sm); align-items: start; margin-top: var(--space-xl); padding: var(--space-lg); background: var(--paper-2); color: var(--body); }
+.callout i { color: var(--accent); margin-top: var(--space-xs); }
+.callout p { max-width: none; font-size: 17px; line-height: 1.9; }
+@media (max-width: 900px) {
+  .page-shell { width: min(100% - 48px, 1320px); }
+  .profile-card { grid-template-columns: 150px minmax(0, 1fr); gap: var(--space-xs) var(--space-lg); }
+  .profile-school { grid-column: 2; grid-row: 1 / 4; }
+  .badges { grid-column: 1 / -1; grid-row: 4; }
+  .profile-links { grid-column: 1 / -1; grid-row: 5; display: flex; flex-wrap: wrap; gap: var(--space-xs) 20px; }
+  .profile .button { grid-column: 1 / -1; grid-row: 6; }
+  .bento-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .page-shell { width: min(100% - 32px, 1320px); }
+  .profile { padding-block: var(--space-md); }
+  .profile-card { grid-template-columns: 120px minmax(0, 1fr); gap: var(--space-xs) var(--space-sm); }
+  .profile-name { font-size: 24px; }
+  .profile-school { font-size: 15px; }
+  .profile-school .small, .profile-caption { font-size: 13px; }
+  .profile-links { display: grid; }
+  .nav-links { gap: 0 var(--space-md); }
+  .nav-links a { padding: var(--space-xs) 0; font-size: 15px; }
+  .section { padding-block: 56px; scroll-margin-top: 112px; }
+  #highlights { padding-block: var(--space-xl) var(--space-lg); }
+  .highlights-continuation { padding-bottom: 56px; }
+  h1 { font-size: clamp(34px, 9vw, 48px); }
+  .bento-grid { grid-template-columns: 1fr; gap: 28px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print { .profile-links, .profile .button, .anchor-nav, .contact-actions { display: none; } .section { break-inside: avoid; } }
